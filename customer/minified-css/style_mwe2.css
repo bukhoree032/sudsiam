@@ -1,0 +1,548 @@
+/* Start new style */
+
+.divider-M {
+    border-bottom: 0px solid #CCC;
+}
+
+.Card-Background-withoutline {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.05);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width: 992px) {
+    .divider-M {
+        border-bottom: 1px solid #CCC;
+        /* margin: 30px -30px 20px; */
+    }
+    .Card-Background-withoutline {
+        margin: 30px -20px 20px;
+        width: 110%;
+        border-radius: 0px;
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.05);
+        border: solid 0px #dddddd;
+        background-color: #ffffff;
+    }
+}
+
+/* End new style */
+
+/* Start style page informpayment */
+
+#formInformPayment .form-control-file {
+    font-size: 0.875rem !important;
+}
+
+.pageInformpayment .divider {
+    margin-top: 1%;
+    border-bottom: 1px solid #CCC;
+}
+
+.pageInformpayment .divider-small {
+    border-bottom: 1px solid #CCC;
+}
+
+.pageInformpayment .divider-small-dashed {
+    border-bottom: 1px dashed #CCC;
+}
+
+.pageInformpayment .divider-small-m {
+    border-bottom: 1px solid #CCC;
+}
+
+.pageInformpayment .custom-file-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 5.3125%;
+}
+
+#refreshCaptchainform {
+    cursor: pointer;
+}
+
+#captchaOperation {
+    line-height: 2.125%;
+}
+
+@media only screen and (max-width: 991px) {
+    .pageInformpayment .form-group.text-right {
+        text-align: left !important;
+    }
+}
+
+#formInformPayment .form-text {
+    font-size: 1rem;
+}
+
+.pageInformpayment .DefaultTitle {
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: Tahoma;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.pageInformpayment .defaultMargin {
+    margin-left: 97px;
+    margin-right: 97px;
+}
+
+.pageInformpayment .maginLeft {
+    margin-left: 3%;
+}
+
+.pageInformpayment .maginLeftPrice {
+    margin-left: 5%;
+}
+
+.pageInformpayment .maginRight {
+    margin-right: 2%;
+}
+
+.pageInformpayment .maginRightPrice {
+    margin-right: 5%;
+}
+
+.pageInformpayment .defaultBottom {
+    margin-bottom: 1%;
+}
+
+.pageInformpayment .defaultTop {
+    margin-top: 1.5%;
+}
+
+.pageInformpayment .defaultbottom-1 {
+    margin-bottom: 1.5%;
+}
+
+.pageInformpayment .defaultBottom-2 {
+    margin-bottom: 55px;
+}
+
+.pageInformpayment .defaultTopM {
+    margin-top: 55px;
+}
+
+.pageInformpayment .defaultbottomM {
+    margin-bottom: 5%;
+}
+
+.pageInformpayment .RectangleTextArea {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px 0 #d2d2d3;
+    border: solid 1px #d4dde4;
+    background-color: #ffffff;
+}
+
+.pageInformpayment .itemCodeTem {
+    font-family: Tahoma;
+    font-size: 0.875rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.pageInformpayment .textDefault20 {
+    font-size: 1.25rem;
+}
+
+.pageInformpayment .textDefault16 {
+    font-size: 1rem;
+}
+
+.pageInformpayment .textDefault14 {
+    font-size: 0.875rem;
+}
+
+.RectangleFreeone {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2px;
+    border: solid 1px #ff0400;
+    background-color: #ff0400;
+    font-size: 12px;
+    color: #ffffff;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.freeonePlus {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2px;
+    border: solid 1px #ff0400;
+    background-color: #ffffff;
+    color: #ff0400;
+    font-size: 12px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.pageInformpayment .opacityElement {
+    opacity: 0.4;
+}
+
+.pageInformpayment .Card-Background-withoutline {
+    width: 100%;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+    border: solid 0px #dddddd;
+    background-color: #ffffff;
+}
+
+.pageInformpayment .totalPriceTitleM {
+    display: none;
+}
+
+.pageInformpayment .paymentListTitleM {
+    display: none;
+}
+
+.pageInformpayment .text-muted {
+    color: #999999;
+}
+
+.pageInformpayment .text-mutedM {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.pageInformpayment .divPanelTitle {
+    margin-top: 3%;
+}
+
+.pageInformpayment .btn-formPayment {
+    background-color: #eceeef;
+}
+
+.pageInformpayment .divider-M {
+    border-bottom: 1px solid #CCC;
+}
+
+.pageInformpayment .border-tb-dash {
+    border-top: 1px dashed #cdced2;
+    border-bottom: 1px dashed #cdced2;
+}
+
+.pageInformpayment input[type=file] {
+    width: 6.25rem;
+    color: transparent;
+}
+
+.pageInformpayment .cardPromotion {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.pageInformpayment .icon-remove {
+    color: #f7381e;
+}
+
+.pageInformpayment .icon-check {
+    color: #5fb412;
+}
+
+.pageInformpayment table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.pageInformpayment td,
+th {
+    text-align: left;
+    /* padding: 8px; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.pageInformpayment .textgatway {
+    font-size: 14px;
+}
+
+.pageInformpayment .opacity03 {
+    opacity: 0.3;
+}
+
+.pageInformpayment #btnpi_slip {
+    width: fit-content;
+    height: 26.8px;
+    font-size: 0.875rem !important;
+}
+
+.icongroup {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.pageInformpayment .icongroup .fa-times-circle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pageInformpayment .icongroup .fa-check-circle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pageInformpayment .boxColorAttr {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+.modal-addToCart {
+    min-width: 760px;
+    padding-right: 20px;
+    padding-left: 20px;
+    animation: fadeIn ease .5s;
+    -webkit-animation: fadeIn ease .5s;
+    -moz-animation: fadeIn ease .5s;
+    -o-animation: fadeIn ease .5s;
+    -ms-animation: fadeIn ease .5s;
+    transform: initial;
+}
+
+.modal-groupProduct {
+    padding-right: 20px;
+    padding-left: 20px;
+    animation: fadeIn ease .5s;
+    -webkit-animation: fadeIn ease .5s;
+    -moz-animation: fadeIn ease .5s;
+    -o-animation: fadeIn ease .5s;
+    -ms-animation: fadeIn ease .5s;
+    transform: initial;
+}
+
+@media only screen and (max-width: 992px) {
+    .pageInformpayment .defaultMargin {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .pageInformpayment .text-size {
+        font-size: 1.25rem;
+    }
+    .pageInformpayment .defaultBottom {
+        margin-bottom: 2%;
+    }
+    .pageInformpayment .defaultTop {
+        margin-top: 2%;
+    }
+    .pageInformpayment .defaultTopM {
+        margin-top: 5%;
+    }
+    .pageInformpayment .defaultbottomM {
+        margin-bottom: 5%;
+    }
+    .pageInformpayment .defaultLeftM {
+        margin-left: 27%;
+    }
+    .pageInformpayment .stackTop {
+        position: relative;
+        left: -23px;
+        top: -3px;
+        z-index: 1;
+    }
+    .pageInformpayment .divider-small-m {
+        border-bottom: 0px solid #CCC;
+    }
+    .RectangleFreeone {
+        width: fit-content;
+        height: fit-content;
+        border-radius: 2px;
+        border: solid 1px #ff0400;
+        background-color: #ff0400;
+        font-size: 12px;
+        color: #ffffff;
+        padding-left: 1%;
+        padding-right: 1%;
+        position: absolute;
+        margin-top: 5%;
+        margin-left: -35%;
+    }
+    .freeonePlus {
+        width: fit-content;
+        height: fit-content;
+        border-radius: 2px;
+        border: solid 1px #ff0400;
+        background-color: #ffffff;
+        color: #ff0400;
+        font-size: 12px;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .pageInformpayment .Card-Background-withoutline {
+        width: 95%;
+        margin-left: auto;
+        position: relative;
+        margin-right: auto;
+        margin-top: -2px;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+        border: solid 1px #dddddd;
+        background-color: #ffffff;
+    }
+    .pageInformpayment .Amount:before {
+        content: "x";
+    }
+    .pageInformpayment .totalPriceTitle {
+        display: none;
+    }
+    .pageInformpayment .totalPriceTitleM {
+        display: inline-block;
+    }
+    .pageInformpayment .paymentListTitle {
+        display: none;
+    }
+    .pageInformpayment .paymentListTitleM {
+        display: inline-block;
+    }
+    .pageInformpayment .divider-M {
+        border-bottom: 1px solid #CCC;
+        margin: 30px -30px 20px;
+    }
+    .pageInformpayment .text-mutedM {
+        color: #999999;
+    }
+    .cardPromotion {
+        border-radius: 4px;
+        border: solid 1px #dddddd;
+        padding-top: 10%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+
+/* End style page informpayment */
+
+.policy-position {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: Tahoma;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999999999;
+}
+
+.policy-position .pad-row-pdpa>div.col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.policy-position .txt-pdconsent {
+    color: #ffffff;
+}
+
+.policy-position .txt-pdconsent a {
+    color: #999999;
+    text-decoration: underline;
+}
+
+.policy-position #btnAcceptPd {
+    padding: 6px 30px;
+    border-radius: 4px;
+    background-color: #24bee2;
+    border-color: #24bee2;
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.pad-row-pdpa,
+.wrap-con {
+    position: relative;
+}
+
+@media only screen and (min-width: 1025px) {
+    .policy-position {
+        font-size: 16px;
+    }
+    .policy-position .pad-row-pdpa {
+        padding: 20px !important;
+    }
+    .cls-poli-dialog {
+        position: absolute;
+        right: 25px;
+        top: 29%;
+        color: #999999;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+    .policy-position {
+        font-size: 16px;
+    }
+    .policy-position .pad-row-pdpa {
+        padding: 20px !important;
+    }
+    .cls-poli-dialog {
+        position: absolute;
+        right: 25px;
+        top: 10%;
+        color: #999999;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .policy-position {
+        font-size: 16px;
+    }
+    .policy-position .pad-row-pdpa {
+        padding: 20px !important;
+    }
+    .cls-poli-dialog {
+        position: absolute;
+        right: 25px;
+        top: 10%;
+        color: #999999;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .policy-position {
+        font-size: 14px;
+    }
+    .policy-position .colbtn {
+        margin-top: 10px;
+    }
+    .policy-position .pad-row-pdpa {
+        padding: 15px !important;
+    }
+    .cls-poli-dialog {
+        position: absolute;
+        right: 25px;
+        top: 10%;
+        color: #999999;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
