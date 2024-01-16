@@ -72,7 +72,8 @@ if (!isset($_SESSION['user_login'])) {
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $datahistory = $conn->prepare("SELECT `bill_trx`,`created`,record_status FROM `record` WHERE `id` = '${user_login}' GROUP BY `bill_trx`");
+                                    $datahistory = $conn->prepare("SELECT `bill_trx`, max(created) as created , max(record_status) as record_status FROM record
+                                                                    WHERE `id` = '${user_login}' GROUP BY `bill_trx`");
                                     $datahistory->execute();
                                     $rowhistory = $datahistory->fetchAll(PDO::FETCH_OBJ);
                                     foreach ($rowhistory as $reshis) {
