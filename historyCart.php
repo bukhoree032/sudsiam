@@ -153,7 +153,13 @@ if (!isset($_SESSION['user_login'])) {
                             </div>
                         </div>
                         <hr>
-
+                        <div class="row">
+                            <div class="col-12 sub-hisCart">
+                                <button class="btn btn-payment" onclick="location.href='informpayment.php?id=<?= $_GET['id'] ?>'" >
+                                    <i class='bx bx-check'></i> แจ้งการชำระเงิน
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -264,6 +270,13 @@ if (!isset($_SESSION['user_login'])) {
                             </div>
                         </div>
                         <hr>
+                        <div class="row">
+                            <div class="col-12 sub-hisCart">
+                                <button class="btn btn-payment" onclick="location.href='informpayment.php?id=<?= $_GET['id'] ?>'" >
+                                    <i class='bx bx-check'></i> แจ้งการชำระเงิน
+                                </button>
+                            </div>
+                        </div>
 
                     </div>
 

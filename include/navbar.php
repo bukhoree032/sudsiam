@@ -82,7 +82,7 @@
                                                         </li>
 
                                                         <li class="nav-item ">
-                                                            <a class="nav-link abl1" href="informpayment.php" target="_self">
+                                                            <a class="nav-link abl1" href="history.php" target="_self">
                                                                 แจ้งการชำระเงิน </a>
                                                         </li>
                                                         <li class="nav-item ">
@@ -217,7 +217,7 @@
                                                     </li>
 
                                                     <li class="nav-item ">
-                                                        <a class="nav-link abl1" href="informpayment.php" target="_self">
+                                                        <a class="nav-link abl1" href="history.php" target="_self">
                                                             แจ้งการชำระเงิน </a>
                                                     </li>
                                                     <li class="nav-item ">

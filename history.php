@@ -101,6 +101,7 @@ if (!isset($_SESSION['user_login'])) {
                                             <td><?= $created ?></td>
                                             <td>
                                                 <a target="_blank" class="searchcart btn-sm bg-warning" href="historyCart.php?id=<?= $billtrx ?>"><i class='bx bx-search'></i></a>
+                                                <a target="_blank" class="btn-sm btn-payment" href="informpayment.php?id=<?= $billtrx ?>">ชำระเงิน</i></a>
                                             </td>
                                         </tr>
                                     <?php } ?>
@@ -185,6 +186,7 @@ if (!isset($_SESSION['user_login'])) {
                                             
                                             <td>
                                                 <a target="_blank" class="searchcart btn-sm bg-warning" href="historyCart.php?id=<?= $billtrx ?>"><i class='bx bx-search'></i></a>
+                                                <a target="_blank" class="btn-sm btn-payment" href="informpayment.php?id=<?= $billtrx ?>">ชำระเงิน</i></a>
                                             </td>
                                         </tr>
                                     <?php } ?>

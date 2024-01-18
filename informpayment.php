@@ -28,7 +28,11 @@
                         <div class="row">
                             <div class="col-7">
                                 <label for="">เลขที่ใบสั่งซื้อ</label>
-                                <input type="text" name="paymentid" id="paymentid" class="form-control" value="">
+                                <?php if(!empty($_GET['id'])){?>
+                                    <input type="text" name="paymentid" id="paymentid" class="form-control" value="<?php echo $_GET['id'] ?>">
+                                <?php }else{ ?>
+                                    <input type="text" name="paymentid" id="paymentid" class="form-control" value="">
+                                <?php } ?>
                                 <span>สามารถตรวจสอบหมายเลขได้จาก <a class="a_payment" href='history.php'>ที่นี้</a></span><br>
                                 <span1></span1>
                             </div>
@@ -211,10 +215,24 @@
         }
     </script>
 
+    <?php if(!empty($_GET['id'])){?>
+        <script>
+        $(document).ready(function(){
+            waitaa();
+        });
+        </script>
+    <?php }else{  ?>
+        <script>
+        $('#paymentid').on('blur', function() {
+            waitaa();
+        });
+        </script>
+    <?php } ?>
     <script>
         var paymentid = false;
 
-        $('#paymentid').on('blur', function() {
+        // $('#paymentid').on('blur', function() {
+        function waitaa() {
             var paymentid = $('#paymentid').val();
             if (paymentid == '') {
                 payment_state = false;
@@ -262,8 +280,38 @@
                     }
                 }
             })
-        });
+        };
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script>
         $("#addpayment").submit(function(e) {
