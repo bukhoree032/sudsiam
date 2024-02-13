@@ -100,8 +100,16 @@ if (!isset($_SESSION['user_login'])) {
                                             } ?>
                                             <td><?= $created ?></td>
                                             <td>
-                                                <a target="_blank" class="searchcart btn-sm bg-warning" href="historyCart.php?id=<?= $billtrx ?>"><i class='bx bx-search'></i></a>
-                                                <a target="_blank" class="btn-sm btn-payment" href="informpayment.php?id=<?= $billtrx ?>">ชำระเงิน</i></a>
+
+                                            <div class="btn-group btn-group-sm" role="group">
+                                                <a class="btn btn-success btn-group-sm btn-sm dropdown-toggle" href="" id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ชำระเงิน</a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="historyCart.php?id=<?= $billtrx ?>"><i class="fa fa-address-card"></i> รายละเอียด</a>
+                                                    <a class="dropdown-item" href="informpayment.php?id=<?= $billtrx ?>"><i class="fas fa-money-bill"></i> ชำระเงิน</a>
+                                                </div>
+                                            </div>
+                                                <!-- <a target="_blank" class="searchcart btn-sm bg-warning" href="historyCart.php?id=<?= $billtrx ?>"><i class='bx bx-search'></i></a>
+                                                <a target="_blank" class="btn-sm btn-payment" href="informpayment.php?id=<?= $billtrx ?>">ชำระเงิน</i></a> -->
                                             </td>
                                         </tr>
                                     <?php } ?>
