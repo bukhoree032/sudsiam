@@ -128,7 +128,7 @@ if (isset($_POST['action'])) {
                                     <input type="text" required name="sorting" id="sorting" class="form-control" placeholder="เช่น 1.1">
                                 </div>
                                 <div class="container text-center mb-1">
-                                    <img id="showpic" src="https://media.discordapp.net/attachments/701876169334587443/821515777324744754/1024px-No_image_available.png" class="rounded col-sm-12" onclick="document.getElementById('preimg').click();" width="90%" style="cursor: pointer;">
+                                    <img id="showpic" src="https://redhoure.yru.ac.th/include/img/c44a07f065f119c09c337856s7899_p0.png" class="rounded col-sm-12" onclick="document.getElementById('preimg').click();" width="90%" style="cursor: pointer;">
                                 </div>
                                 <div class="text-center">
                                     <input type="file" class="sr-only" id="preimg" name="preimg" required accept="image/*" onchange="readURL(this);">
