@@ -42,7 +42,17 @@
                         $product_pic->execute();
                         $rowPic = $product_pic->fetch(PDO::FETCH_ASSOC);
                         ?>
-                        <img id="previewhere" src="include/img/<?= $rowPic['product_pic_path']; ?>" width="550px" height="550px" alt="">
+                        <?php 
+                            if(!isset($rowPic['product_pic_path'])){
+                        ?>
+                                <img id="previewhere" src="https://redhoure.yru.ac.th/include/img/c44a07f065f119c09c337856s7899_p0.png" width="550px" height="550px" alt="">
+                        <?php
+                            }else{
+                        ?>
+                                <img id="previewhere" src="include/img/<?= $rowPic['product_pic_path']; ?>" width="550px" height="550px" alt="">
+                        <?php
+                            }
+                        ?> 
 
                         <div class="prepic-product dis-n">
                             <?php

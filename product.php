@@ -27,19 +27,25 @@
                                                         <a href="buyproduct.php?id=<?php echo $res->product_id; ?>" class="awrap-img">
 
                                                             <?php
+                                                                $getFimg = "SELECT * FROM product_pic WHERE product_id = $res->product_id ORDER BY product_pic_sort ASC LIMIT 1";
+                                                                $queryFimg = $conn->prepare($getFimg);
+                                                                $queryFimg->execute();
+                                                                $resultFimg = $queryFimg->fetchAll(PDO::FETCH_OBJ);
 
-                                                            $getFimg = "SELECT * FROM product_pic WHERE product_id = $res->product_id ORDER BY product_pic_sort ASC LIMIT 1";
-                                                            $queryFimg = $conn->prepare($getFimg);
-                                                            $queryFimg->execute();
-                                                            $resultFimg = $queryFimg->fetchAll(PDO::FETCH_OBJ);
-                                                            foreach ($resultFimg as $resFimg) {
+                                                                if(!isset($resultFimg[0])){
                                                             ?>
-                                                                <img class="lazy mx-auto" src="https://webbuilder1.makewebeasy.com/images/lazy_default.png" data-src="include/img/<?= $resFimg->product_pic_path; ?>">
-
+                                                                    <img class="lazy mx-auto" src="https://webbuilder1.makewebeasy.com/images/lazy_default.png" data-src="https://redhoure.yru.ac.th/include/img/c44a07f065f119c09c337856s7899_p0.png">
+                                                                    
+                                                            <?php
+                                                                }else{
+                                                                    foreach ($resultFimg as $resFimg) {
+                                                            ?>
+                                                                        <img class="lazy mx-auto" src="https://webbuilder1.makewebeasy.com/images/lazy_default.png" data-src="include/img/<?= $resFimg->product_pic_path; ?>">
+                                                            <?php
+                                                                    }
+                                                                }
+                                                            ?>
                                                         </a>
-                                                    <?php
-                                                            }
-                                                    ?>
                                                     </div>
                                                     <div class="productCaption">
                                                         <div class="productName">

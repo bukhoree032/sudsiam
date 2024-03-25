@@ -217,7 +217,17 @@
                                     ?>
                                             <div class="row">
                                                 <div class="col-12 col-lg-2 text-center mt-2">
-                                                    <img src="include/img/<?= $rowpicCart['product_pic_path'] ?>" width="50px" height="50px" alt="">
+                                                    <?php 
+                                                        if(!isset($rowpicCart['product_pic_path'])){
+                                                    ?>
+                                                            <img src="https://redhoure.yru.ac.th/include/img/c44a07f065f119c09c337856s7899_p0.png" width="50px" height="50px" alt="">
+                                                    <?php
+                                                        }else{
+                                                    ?>
+                                                            <img src="include/img/<?= $rowpicCart['product_pic_path'] ?>" width="50px" height="50px" alt="">
+                                                    <?php
+                                                        }
+                                                    ?>  
                                                 </div>
                                                 <div class="col-12 col-lg-8 ml-2">
                                                     <span class="text-comfirm"><?= $rowcartproduct['product_name']; ?> </span>
@@ -474,7 +484,17 @@
                                     ?>
                                             <div class="row">
                                                 <div class="col-12 col-lg-2 text-center mt-2">
-                                                    <img src="include/img/<?= $rowpicCart['product_pic_path'] ?>" width="50px" height="50px" alt="">
+                                                    <?php 
+                                                        if(!isset($rowpicCart['product_pic_path'])){
+                                                    ?>
+                                                            <img src="https://redhoure.yru.ac.th/include/img/c44a07f065f119c09c337856s7899_p0.png" width="50px" height="50px" alt="">
+                                                    <?php
+                                                        }else{
+                                                    ?>
+                                                            <img src="include/img/<?= $rowpicCart['product_pic_path'] ?>" width="50px" height="50px" alt="">
+                                                    <?php
+                                                        }
+                                                    ?>  
                                                 </div>
                                                 <div class="col-12 col-lg-8 ml-2">
                                                     <span class="text-comfirm"><?= $rowcartproduct['product_name']; ?> </span>

@@ -71,7 +71,17 @@
                                     ?>
                                         <div class="row">
                                             <div class="col col-lg-2 text-center font-weight-bold">
-                                                <img src="include/img/<?= $rowpicCart['product_pic_path'] ?>" width="50px" height="50px" alt="">
+                                                <?php 
+                                                    if(!isset($rowpicCart['product_pic_path'])){
+                                                ?>
+                                                        <img src="https://redhoure.yru.ac.th/include/img/c44a07f065f119c09c337856s7899_p0.png" width="50px" height="50px" alt="">
+                                                <?php
+                                                    }else{
+                                                ?>
+                                                        <img src="include/img/<?= $rowpicCart['product_pic_path'] ?>" width="50px" height="50px" alt="">
+                                                <?php
+                                                    }
+                                                ?>    
                                             </div>
 
                                             <div class="col-4 col-lg-2 d-lg-block px-0 proname-wid">

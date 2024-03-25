@@ -114,7 +114,17 @@ if (!isset($_SESSION['user_login'])) {
                                     $rowpicCart = $picCart->fetch(PDO::FETCH_ASSOC);
                                 ?>
                                     <tr>
-                                        <td><img src="include/img/<?= $rowpicCart['product_pic_path'] ?>" width="50px" height="50px" alt=""></td>
+                                        <?php 
+                                            if(!isset($rowpicCart['product_pic_path'])){
+                                        ?>
+                                                <td><img src="https://redhoure.yru.ac.th/include/img/c44a07f065f119c09c337856s7899_p0.png" width="50px" height="50px" alt=""></td>
+                                        <?php
+                                            }else{
+                                        ?>
+                                                <td><img src="include/img/<?= $rowpicCart['product_pic_path'] ?>" width="50px" height="50px" alt=""></td>
+                                        <?php
+                                            }
+                                        ?>  
                                         <td><?= $rowcart['product_name'] ?></td>
                                         <td><?= number_format($rowcart['product_price']) . ' ' . 'บาท' ?></td>
                                         <td><?= $val ?></td>
@@ -230,7 +240,17 @@ if (!isset($_SESSION['user_login'])) {
                                     $rowpicCart = $picCart->fetch(PDO::FETCH_ASSOC);
                                 ?>
                                     <tr>
-                                        <td><img src="include/img/<?= $rowpicCart['product_pic_path'] ?>" width="50px" height="50px" alt=""></td>
+                                        <?php 
+                                            if(!isset($rowpicCart['product_pic_path'])){
+                                        ?>
+                                                <td><img src="https://redhoure.yru.ac.th/include/img/c44a07f065f119c09c337856s7899_p0.png" width="50px" height="50px" alt=""></td>
+                                        <?php
+                                            }else{
+                                        ?>
+                                                <td><img src="include/img/<?= $rowpicCart['product_pic_path'] ?>" width="50px" height="50px" alt=""></td>
+                                        <?php
+                                            }
+                                        ?>  
                                         <td><?= $rowcart['product_name'] ?></td>
                                         <td><?= number_format($rowcart['product_price']) . ' ' . 'บาท' ?></td>
                                         <td><?= $val ?></td>
