@@ -23,7 +23,7 @@ include('../include/connect.php')
 
             <i class="bx bxl-c-plus-plus"></i>
             <span class="logo-name">
-                CodingLab
+                RedHoure
             </span>
         </div>
         <ul class="nav-linked">

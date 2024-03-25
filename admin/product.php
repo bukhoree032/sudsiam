@@ -52,7 +52,17 @@
 
                                     <tr>
                                         <td>
-                                            <img src="../include/img/<?= $rowpic['product_pic_path']; ?>" width="50px" height="50px" alt="">
+                                            <?php 
+                                                if(!isset($rowpic['product_pic_path'])){
+                                            ?>
+                                                <img src="https://redhoure.yru.ac.th/include/img/c44a07f065f119c09c337856s7899_p0.png" width="50px" height="50px" alt="">
+                                            <?php
+                                                }else{
+                                            ?>
+                                                <img src="../include/img/<?= $rowpic['product_pic_path']; ?>" width="50px" height="50px" alt="">
+                                            <?php
+                                                }
+                                            ?>  
 
                                         </td>
 

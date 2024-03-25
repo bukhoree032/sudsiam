@@ -110,7 +110,6 @@
                             $row = $sql->fetchAll(PDO::FETCH_OBJ);
 
                             foreach ($row as $res) {
-                                // echo $res->product_id;
                                 if ($res->product_quantity <= 20) {
 
                                     $sqlpic = $conn->prepare("SELECT * FROM product_pic WHERE product_id = '$res->product_id'");
@@ -119,7 +118,17 @@
                             ?>
                                     <tr>
                                         <td>
-                                            <img src="../include/img/<?= $rowpic['product_pic_path'] ?>" width="50px" height="50px" alt="">
+                                            <?php 
+                                                if(!isset($rowpic['product_pic_path'])){
+                                            ?>
+                                                <img src="https://redhoure.yru.ac.th/include/img/c44a07f065f119c09c337856s7899_p0.png" width="50px" height="50px" alt="">
+                                            <?php
+                                                }else{
+                                            ?>
+                                                <img src="../include/img/13898f32d550e075cdae179225_0.jpg" width="50px" height="50px" alt="">
+                                            <?php
+                                                }
+                                            ?>  
                                         </td>
                                         <td><?php echo $res->product_code; ?></td>
                                         <td><?php echo $res->product_name; ?></td>
